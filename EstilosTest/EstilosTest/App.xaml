@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EstilosTest.App">
+
+  <Application.Resources>
+
+    <ResourceDictionary>
+
+      <Color x:Key="CorDoTexto">Gray</Color>
+      <Color x:Key="CorDeFundo">Black</Color>
+      <Color x:Key="CorDoTitulo">#FFCCFF</Color>
+      <Color x:Key="CorDaPagina">#FF0000</Color>
+
+      <Font x:Key="Titulo">26, Bold</Font>
+      <Font x:Key="Subtitulo">20</Font>
+
+      <Style x:Key="Botao1" TargetType="Button">
+        <Setter Property="TextColor" Value="{StaticResource CorDoTexto}"></Setter>
+        <Setter Property="BackgroundColor" Value="Red"></Setter>
+        <Setter Property="Font" Value="{StaticResource Titulo}"></Setter>
+      </Style>
+
+      <Style x:Key="Botao2" BasedOn="{StaticResource Botao1}" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="Green"></Setter>
+      </Style>
+
+    </ResourceDictionary>
+
+  </Application.Resources>
+
+</Application>
